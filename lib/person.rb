@@ -5,7 +5,7 @@ class Person
   :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize(person_hash)
-    person_hash.each {|key, value| (("#{key}="), value)}
+    person_hash.each {|key, value| self.send(("#{key}="), value)}
   end
 
 
