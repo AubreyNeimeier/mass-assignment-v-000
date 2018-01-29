@@ -6,5 +6,7 @@ class Person
 
   def initialize(person_hash)
     person_hash.each {|key, value| (("#{key}="), value)}
+  end
+
 
 end
